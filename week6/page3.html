@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM</title>
+</head>
+<body>
+
+    <h1>Personal Greeting</h1>
+
+    <p id="greeting"></p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("username");
+
+        document.getElementById("greeting").innerHTML =
+            "Hello " + name + ", Welcome to ABC.COM!";
+    </script>
+
+</body>
+</html>

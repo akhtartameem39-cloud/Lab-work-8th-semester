@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM</title>
+</head>
+<body>
+
+    <h1>Welcome to ABC.COM</h1>
+
+    <p>
+        ABC.COM is your trusted platform for learning. We are happy to have you here!
+    </p>
+
+    <form action="page3.html" method="get">
+        <input type="hidden" name="username" id="username">
+
+        <input type="submit" value="Next">
+    </form>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("username");
+
+        document.getElementById("username").value = name;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Frames</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left {
+            width: 30%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        .top {
+            height: 50%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom {
+            height: 50%;
+            display: flex;
+        }
+        .bottom-left,
+        .bottom-right {
+            width: 50%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+            <h1>My Frame</h1>
+    </div>
+    <div class="right">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="bottom-left"></div>
+            <div class="bottom-right"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
